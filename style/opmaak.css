@@ -1,0 +1,96 @@
+
+* {
+margin: 0px;
+padding: 0px;
+}
+body {
+
+  background-image: url("https://www.deingenieur.nl/uploads/cache/article_detail_image/uploads/media/59b24ca850a02/spurs.jpg") ;
+  background-color: grey  ;
+  margin-left: 50px;
+}
+  h2 {
+    background-color: pink;
+    font-family: "Courier New";
+}
+h1#groot:hover {
+
+  background-color: white;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 100px 50px 5fr 1fr;
+    grid-template-areas: "hoofd hoofd hoofd"
+                         "hoofd1 hoofd1 hoofd1"
+                         "fotos midden midden "
+                         "voet voet voet";
+  }
+
+  .box {
+    min-height: 700px;
+  }
+
+ #balkje1 {
+   grid-area: hoofd;
+   background-color: orange;
+   display: flex;
+   justify-content: center;
+
+
+ }
+
+ #balkje2 {
+   grid-area: hoofd1;
+   background-color:red ;
+
+ }
+
+
+
+ #linkerkolom {
+      grid-area: fotos;
+      background-color:White  ;
+ }
+
+  #centrum {
+    grid-area: midden;
+    margin-top: 25px;
+    background-image: url(download.jpg);
+    
+      background-size: cover;
+
+  }
+  p{ color:  }
+
+  h1#groot {
+    border: 4px maroon double ;
+    background-color: red ;
+    text-align : center;
+    font-family:Arial, "Times New Roman" , Times, serif;
+    font-style: italic;
+    margin: 5px;
+
+  }
+
+  h1#bsa {
+  border: 4px maroon double;
+  border-radius: 25px 1px 25px 3px;
+  text-align: center;
+  padding: 5px 1px 0px 10%;
+  border-style: dotted
+}
+
+#footer {
+  grid-area: voet;
+  background-color: Orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+.broek{
+width: 49%;
+}
